@@ -1,0 +1,19 @@
+# Dependencies and build output
+node_modules/
+dist/
+.vercel/
+
+# MediaPipe models and WASM (fetched by `npm run fetch-models`)
+public/models/
+public/wasm/
+
+# Local env and OS/editor clutter
+.env
+.env.*
+.DS_Store
+Thumbs.db
+*.log
+coverage/
+
+# NOTE: .kiro/ is intentionally NOT ignored. The steering, specs and hooks
+# are part of the submission and show how the app was built with Kiro.

@@ -1,0 +1,17 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Lint and test after each task",
+      "description": "After every spec task finishes, run ESLint and the Vitest suite (skipped until package.json exists).",
+      "trigger": "PostTaskExec",
+      "matcher": ".*",
+      "action": {
+        "type": "command",
+        "command": "test -f package.json && npm run -s lint && npm test"
+      },
+      "timeout": 300,
+      "enabled": true
+    }
+  ]
+}
