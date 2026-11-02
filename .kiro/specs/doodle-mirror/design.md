@@ -40,13 +40,13 @@ type SkinId = 'default'|'vampire'|'ghost';
 type EyeState = 'open'|'half'|'closed';
 type Viseme = 'A'|'E'|'O'|'M'|'smile'|'laugh';
 interface Rect { x: number; y: number; w: number; h: number }   // relative to face centre, in ref-face px
-interface PoseEntry { file: string; head: { x: number; y: number; size: number }; face: 'full'|'eyes-only'|'none' }
+interface PoseEntry { file: string; head: { x: number; y: number; size: number }; face: 'full'|'eyes-only'|'mouth-only'|'none' }
 interface SkinEntry {
   label: string;
   poses: Record<PoseId, PoseEntry>;
   face: { refSize: number; eyes: Record<EyeState, { file: string; rect: Rect }>; mouths: Record<Viseme, { file: string; rect: Rect }> };
 }
-interface Manifest { version: 1; canvas: { w: number; h: number; floorY: number }; poseIds: PoseId[]; skins: Record<SkinId, SkinEntry>; background: { file: string } }
+interface Manifest { version: 1; canvas: { w: number; h: number; floorY: number }; poseIds: PoseId[]; skins: Record<SkinId, SkinEntry>; background: { file: string; w: number; h: number }; notes?: string }
 function loadManifest(url: string): Promise<Manifest>;
 function validateManifest(m: unknown): { ok: true; manifest: Manifest } | { ok: false; errors: string[] };
 ```
@@ -109,7 +109,7 @@ Bottom bar: skin chips (from manifest labels), Record (with timer), Haunt toggle
   "background": { "file": "bg/haunted.png" }
 }
 ```
-(Real values are in the committed manifest.)
+(Real values are in the committed manifest. All 24 pose PNGs share the 1024x1536 canvas with the feet on `floorY` = 1490 and the same character scale, so poses can be swapped without any per-pose offset. Every face patch has a soft alpha edge and is clipped to the face silhouette; it already contains the surrounding skin, so drawing it over the pose erases the drawn eyes or mouth underneath.)
 
 ## Error Handling
 - Camera denied / no camera → message + idle character (Req 1.3).

@@ -38,6 +38,14 @@ npm run dev
 ## Art
 All character art is Swapnil's doodle character (bold black outlines, big round eyes, pink tulip, hot pink + sunny yellow). Poses and face patches live in `assets/skins/<skin>/`, all on one canvas size and floor line.
 
+| Skin | Poses | Eye patches | Mouth patches |
+|---|---|---|---|
+| Doodle Swapnil (default) | 8 | open, half, closed | A, E, O, M, smile, laugh |
+| Vampire | 8 | open, half, closed | A, E, O, M, smile, laugh (with fangs) |
+| Ghost | 8 | open, half, closed | A, E, O, M, smile, laugh |
+
+The art was prepared before the build (AI-assisted drawings of Swapnil's own doodle character from her brand references, keyed, normalised to one floor line and scale, face patches cut from one neutral head per skin). The app code is written in Kiro from the spec.
+
 ## Built with Kiro
 <!-- TODO (Swapnil): fill this in while building, with screenshots. Judges score real Kiro usage. -->
 - **Spec-driven development:** _TODO: how the requirements → design → tasks spec in `.kiro/specs/doodle-mirror/` guided the build; which tasks Kiro implemented; what you changed in the spec along the way._

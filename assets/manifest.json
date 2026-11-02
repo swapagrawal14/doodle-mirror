@@ -1,0 +1,521 @@
+{
+  "version": 1,
+  "canvas": {
+    "w": 1024,
+    "h": 1536,
+    "floorY": 1490
+  },
+  "poseIds": [
+    "idle",
+    "wave",
+    "point",
+    "thumbs_up",
+    "hands_up",
+    "open_arms",
+    "facepalm",
+    "dab"
+  ],
+  "skins": {
+    "default": {
+      "label": "Doodle Swapnil",
+      "poses": {
+        "idle": {
+          "file": "skins/default/poses/idle.png",
+          "head": {
+            "x": 510.1,
+            "y": 326.8,
+            "size": 286.3
+          },
+          "face": "full"
+        },
+        "wave": {
+          "file": "skins/default/poses/wave.png",
+          "head": {
+            "x": 510.1,
+            "y": 331.4,
+            "size": 286.3
+          },
+          "face": "full"
+        },
+        "point": {
+          "file": "skins/default/poses/point.png",
+          "head": {
+            "x": 510.1,
+            "y": 327.8,
+            "size": 286.3
+          },
+          "face": "full"
+        },
+        "thumbs_up": {
+          "file": "skins/default/poses/thumbs_up.png",
+          "head": {
+            "x": 510.1,
+            "y": 327.7,
+            "size": 286.3
+          },
+          "face": "full"
+        },
+        "hands_up": {
+          "file": "skins/default/poses/hands_up.png",
+          "head": {
+            "x": 510.1,
+            "y": 327.8,
+            "size": 286.3
+          },
+          "face": "full"
+        },
+        "open_arms": {
+          "file": "skins/default/poses/open_arms.png",
+          "head": {
+            "x": 510.1,
+            "y": 328.3,
+            "size": 286.3
+          },
+          "face": "full"
+        },
+        "facepalm": {
+          "file": "skins/default/poses/facepalm.png",
+          "head": {
+            "x": 510.2,
+            "y": 327.8,
+            "size": 286.3
+          },
+          "face": "mouth-only"
+        },
+        "dab": {
+          "file": "skins/default/poses/dab.png",
+          "head": {
+            "x": 510.1,
+            "y": 327.8,
+            "size": 286.3
+          },
+          "face": "full"
+        }
+      },
+      "face": {
+        "refSize": 286.3,
+        "eyes": {
+          "open": {
+            "file": "skins/default/face/eyes_open.png",
+            "rect": {
+              "x": -104,
+              "y": -89.5,
+              "w": 208,
+              "h": 72
+            }
+          },
+          "half": {
+            "file": "skins/default/face/eyes_half.png",
+            "rect": {
+              "x": -104,
+              "y": -89.5,
+              "w": 208,
+              "h": 72
+            }
+          },
+          "closed": {
+            "file": "skins/default/face/eyes_closed.png",
+            "rect": {
+              "x": -104,
+              "y": -89.5,
+              "w": 208,
+              "h": 72
+            }
+          }
+        },
+        "mouths": {
+          "A": {
+            "file": "skins/default/face/mouth_A.png",
+            "rect": {
+              "x": -80,
+              "y": 14.5,
+              "w": 160,
+              "h": 94
+            }
+          },
+          "E": {
+            "file": "skins/default/face/mouth_E.png",
+            "rect": {
+              "x": -80,
+              "y": 14.5,
+              "w": 160,
+              "h": 94
+            }
+          },
+          "O": {
+            "file": "skins/default/face/mouth_O.png",
+            "rect": {
+              "x": -80,
+              "y": 14.5,
+              "w": 160,
+              "h": 94
+            }
+          },
+          "M": {
+            "file": "skins/default/face/mouth_M.png",
+            "rect": {
+              "x": -80,
+              "y": 14.5,
+              "w": 160,
+              "h": 94
+            }
+          },
+          "smile": {
+            "file": "skins/default/face/mouth_smile.png",
+            "rect": {
+              "x": -80,
+              "y": 14.5,
+              "w": 160,
+              "h": 94
+            }
+          },
+          "laugh": {
+            "file": "skins/default/face/mouth_laugh.png",
+            "rect": {
+              "x": -80,
+              "y": 14.5,
+              "w": 160,
+              "h": 94
+            }
+          }
+        }
+      }
+    },
+    "vampire": {
+      "label": "Vampire",
+      "poses": {
+        "idle": {
+          "file": "skins/vampire/poses/idle.png",
+          "head": {
+            "x": 509.9,
+            "y": 332.5,
+            "size": 286.3
+          },
+          "face": "full"
+        },
+        "wave": {
+          "file": "skins/vampire/poses/wave.png",
+          "head": {
+            "x": 509.4,
+            "y": 328.1,
+            "size": 286.3
+          },
+          "face": "full"
+        },
+        "point": {
+          "file": "skins/vampire/poses/point.png",
+          "head": {
+            "x": 510.1,
+            "y": 327.8,
+            "size": 286.3
+          },
+          "face": "full"
+        },
+        "thumbs_up": {
+          "file": "skins/vampire/poses/thumbs_up.png",
+          "head": {
+            "x": 510.2,
+            "y": 328.2,
+            "size": 286.3
+          },
+          "face": "full"
+        },
+        "hands_up": {
+          "file": "skins/vampire/poses/hands_up.png",
+          "head": {
+            "x": 510.2,
+            "y": 328.5,
+            "size": 286.3
+          },
+          "face": "full"
+        },
+        "open_arms": {
+          "file": "skins/vampire/poses/open_arms.png",
+          "head": {
+            "x": 509.9,
+            "y": 333.3,
+            "size": 286.3
+          },
+          "face": "full"
+        },
+        "facepalm": {
+          "file": "skins/vampire/poses/facepalm.png",
+          "head": {
+            "x": 509.5,
+            "y": 327.8,
+            "size": 286.3
+          },
+          "face": "mouth-only"
+        },
+        "dab": {
+          "file": "skins/vampire/poses/dab.png",
+          "head": {
+            "x": 508.5,
+            "y": 329.3,
+            "size": 286.3
+          },
+          "face": "full"
+        }
+      },
+      "face": {
+        "refSize": 286.3,
+        "eyes": {
+          "open": {
+            "file": "skins/vampire/face/eyes_open.png",
+            "rect": {
+              "x": -104,
+              "y": -89.5,
+              "w": 208,
+              "h": 72
+            }
+          },
+          "half": {
+            "file": "skins/vampire/face/eyes_half.png",
+            "rect": {
+              "x": -104,
+              "y": -89.5,
+              "w": 208,
+              "h": 72
+            }
+          },
+          "closed": {
+            "file": "skins/vampire/face/eyes_closed.png",
+            "rect": {
+              "x": -104,
+              "y": -89.5,
+              "w": 208,
+              "h": 72
+            }
+          }
+        },
+        "mouths": {
+          "A": {
+            "file": "skins/vampire/face/mouth_A.png",
+            "rect": {
+              "x": -80,
+              "y": 14.5,
+              "w": 160,
+              "h": 94
+            }
+          },
+          "E": {
+            "file": "skins/vampire/face/mouth_E.png",
+            "rect": {
+              "x": -80,
+              "y": 14.5,
+              "w": 160,
+              "h": 94
+            }
+          },
+          "O": {
+            "file": "skins/vampire/face/mouth_O.png",
+            "rect": {
+              "x": -80,
+              "y": 14.5,
+              "w": 160,
+              "h": 94
+            }
+          },
+          "M": {
+            "file": "skins/vampire/face/mouth_M.png",
+            "rect": {
+              "x": -80,
+              "y": 14.5,
+              "w": 160,
+              "h": 94
+            }
+          },
+          "smile": {
+            "file": "skins/vampire/face/mouth_smile.png",
+            "rect": {
+              "x": -80,
+              "y": 14.5,
+              "w": 160,
+              "h": 94
+            }
+          },
+          "laugh": {
+            "file": "skins/vampire/face/mouth_laugh.png",
+            "rect": {
+              "x": -80,
+              "y": 14.5,
+              "w": 160,
+              "h": 94
+            }
+          }
+        }
+      }
+    },
+    "ghost": {
+      "label": "Ghost",
+      "poses": {
+        "idle": {
+          "file": "skins/ghost/poses/idle.png",
+          "head": {
+            "x": 510.1,
+            "y": 328.1,
+            "size": 286.3
+          },
+          "face": "full"
+        },
+        "wave": {
+          "file": "skins/ghost/poses/wave.png",
+          "head": {
+            "x": 509.7,
+            "y": 331.2,
+            "size": 286.3
+          },
+          "face": "full"
+        },
+        "point": {
+          "file": "skins/ghost/poses/point.png",
+          "head": {
+            "x": 510.2,
+            "y": 328.6,
+            "size": 286.3
+          },
+          "face": "full"
+        },
+        "thumbs_up": {
+          "file": "skins/ghost/poses/thumbs_up.png",
+          "head": {
+            "x": 510.1,
+            "y": 328.0,
+            "size": 286.3
+          },
+          "face": "full"
+        },
+        "hands_up": {
+          "file": "skins/ghost/poses/hands_up.png",
+          "head": {
+            "x": 509.8,
+            "y": 328.7,
+            "size": 286.3
+          },
+          "face": "full"
+        },
+        "open_arms": {
+          "file": "skins/ghost/poses/open_arms.png",
+          "head": {
+            "x": 510.1,
+            "y": 328.0,
+            "size": 286.3
+          },
+          "face": "full"
+        },
+        "facepalm": {
+          "file": "skins/ghost/poses/facepalm.png",
+          "head": {
+            "x": 510.2,
+            "y": 327.8,
+            "size": 286.3
+          },
+          "face": "mouth-only"
+        },
+        "dab": {
+          "file": "skins/ghost/poses/dab.png",
+          "head": {
+            "x": 510.2,
+            "y": 328.3,
+            "size": 286.3
+          },
+          "face": "full"
+        }
+      },
+      "face": {
+        "refSize": 286.3,
+        "eyes": {
+          "open": {
+            "file": "skins/ghost/face/eyes_open.png",
+            "rect": {
+              "x": -104,
+              "y": -89.5,
+              "w": 208,
+              "h": 72
+            }
+          },
+          "half": {
+            "file": "skins/ghost/face/eyes_half.png",
+            "rect": {
+              "x": -104,
+              "y": -89.5,
+              "w": 208,
+              "h": 72
+            }
+          },
+          "closed": {
+            "file": "skins/ghost/face/eyes_closed.png",
+            "rect": {
+              "x": -104,
+              "y": -89.5,
+              "w": 208,
+              "h": 72
+            }
+          }
+        },
+        "mouths": {
+          "A": {
+            "file": "skins/ghost/face/mouth_A.png",
+            "rect": {
+              "x": -80,
+              "y": 14.5,
+              "w": 160,
+              "h": 94
+            }
+          },
+          "E": {
+            "file": "skins/ghost/face/mouth_E.png",
+            "rect": {
+              "x": -80,
+              "y": 14.5,
+              "w": 160,
+              "h": 94
+            }
+          },
+          "O": {
+            "file": "skins/ghost/face/mouth_O.png",
+            "rect": {
+              "x": -80,
+              "y": 14.5,
+              "w": 160,
+              "h": 94
+            }
+          },
+          "M": {
+            "file": "skins/ghost/face/mouth_M.png",
+            "rect": {
+              "x": -80,
+              "y": 14.5,
+              "w": 160,
+              "h": 94
+            }
+          },
+          "smile": {
+            "file": "skins/ghost/face/mouth_smile.png",
+            "rect": {
+              "x": -80,
+              "y": 14.5,
+              "w": 160,
+              "h": 94
+            }
+          },
+          "laugh": {
+            "file": "skins/ghost/face/mouth_laugh.png",
+            "rect": {
+              "x": -80,
+              "y": 14.5,
+              "w": 160,
+              "h": 94
+            }
+          }
+        }
+      }
+    }
+  },
+  "background": {
+    "file": "bg/haunted.png",
+    "w": 768,
+    "h": 1376
+  },
+  "notes": "head.x/head.y = face centre (between eyes and mouth) in pose-image px; head.size = face width (2.5 x inter-eye distance). Patch rects are relative to the face centre in units where face width = skins.<id>.face.refSize; draw at head + rect * (head.size / refSize)."
+}

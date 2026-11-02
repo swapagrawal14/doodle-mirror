@@ -29,6 +29,6 @@ Source: Swapnil's Rigpop Motion rules, https://github.com/swapagrawal14/rigpop-m
 - Every pose in the manifest has a `head` anchor `{x, y, size}` in pose-image pixels: x,y is the face centre (between the eyes and mouth), size is the face width.
 - Eye and mouth patches are drawn at that anchor, scaled by `head.size / skin.face.refSize`, using the patch rects stored in the manifest (relative to the face centre).
 - The mouth patch must cover the drawn mouth completely so only one mouth is ever visible. Same for eyes.
-- Poses whose face is covered (`facepalm`) have `"face": "eyes-only"` or `"none"` in the manifest; honour it.
+- Each pose has a `face` mode in the manifest: `full`, `eyes-only`, `mouth-only` or `none`. `facepalm` is `mouth-only` because the hand covers one eye; drawing eye patches there would paint over the fingers. Honour the mode.
 - Eyes: eye-aspect ratio (EAR) from FaceLandmarker eye landmarks, averaged over both eyes and smoothed (EMA α=0.5). EAR > 0.24 → open, 0.17–0.24 → half, < 0.17 → closed (tunable). Fall back to the `eyeBlinkLeft/Right` blendshapes if landmarks are missing. Add an idle auto-blink every 3–6 s when the face is not tracked.
 - Mouth (visemes) from blendshapes, priority order: `jawOpen > 0.55` and smile → `laugh`; `mouthFunnel`/`mouthPucker > 0.35` → `O`; `jawOpen > 0.35` → `A`; `mouthStretch`/wide + small jaw → `E`; smile > 0.45 and jaw < 0.15 → `smile`; otherwise `M`. Hold each viseme at least 2 frames to avoid chatter. When the face is lost but mic is on, use mic RMS to alternate `M`/`A`/`E`.

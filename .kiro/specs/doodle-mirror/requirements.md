@@ -80,7 +80,7 @@ Doodle Mirror is a client-side web app in which Swapnil Agrawal's hand-drawn doo
 1. WHEN face blendshapes are available THE SYSTEM SHALL map them to one of A, E, O, M, smile or laugh and show the matching mouth patch.
 2. THE SYSTEM SHALL hold each viseme at least 2 frames to avoid chatter.
 3. WHILE the mic is on and the face is not tracked THE SYSTEM SHALL drive the mouth from mic loudness.
-4. WHERE a pose's manifest face mode is `eyes-only` or `none` THE SYSTEM SHALL skip the patches that mode excludes.
+4. WHERE a pose's manifest face mode is `eyes-only`, `mouth-only` or `none` THE SYSTEM SHALL skip the patches that mode excludes (eye patches are also skipped for `mouth-only`).
 
 ### Requirement 8: Costume skins
 **User Story:** As a Kiroween visitor, I want to change costumes, so that my doodle twin can be a vampire or a ghost.
